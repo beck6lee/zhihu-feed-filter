@@ -1,0 +1,17 @@
+{
+  "name": "zhihu-filter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "generate-icons": "node generate-icons.js"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0",
+    "jimp": "^0.22.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
