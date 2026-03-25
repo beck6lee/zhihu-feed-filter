@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>知乎过滤</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <label for="toggle-enabled">启用过滤</label>
+      <label class="switch">
+        <input type="checkbox" id="toggle-enabled">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="row">
+      <label for="toggle-ads">自动屏蔽广告</label>
+      <label class="switch">
+        <input type="checkbox" id="toggle-ads">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="section-title">关键词列表</div>
+    <div id="keyword-list"></div>
+
+    <div class="add-row">
+      <input type="text" id="keyword-input" placeholder="输入关键词…" maxlength="100">
+      <button id="add-btn">添加</button>
+    </div>
+    <div id="keyword-error" class="error" aria-live="polite"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
