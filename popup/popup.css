@@ -69,6 +69,11 @@ input:checked + .slider::before {
 }
 
 /* Keyword list */
+#keyword-list {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
 .section-title {
   font-size: 12px;
   color: #999;

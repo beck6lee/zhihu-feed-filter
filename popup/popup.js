@@ -49,7 +49,8 @@ function saveAndNotify() {
 function renderKeywords() {
   var list = document.getElementById('keyword-list');
   list.innerHTML = '';
-  state.keywords.forEach(function(kw, i) {
+  for (var i = state.keywords.length - 1; i >= 0; i--) {
+    var kw = state.keywords[i];
     var item = document.createElement('div');
     item.className = 'keyword-item';
     var span = document.createElement('span');
@@ -61,7 +62,7 @@ function renderKeywords() {
     item.appendChild(span);
     item.appendChild(btn);
     list.appendChild(item);
-  });
+  }
 }
 
 function renderState() {
